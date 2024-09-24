@@ -26,17 +26,12 @@ body {
     height: 23.5rem;
 }
 
-#about h1 {
+h1 {
     font-size: 1.5rem;
     color: white;
 }
 
-#about h3 {
-    width: 10rem;
-    margin: 0 auto;
-}
-
-div > h3 {
+h3 {
     color: LightCoral;
     width: 13rem;
     margin: 0 auto;
