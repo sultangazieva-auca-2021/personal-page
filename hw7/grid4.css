@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(75px, auto) minmax(75px, auto) minmax(75px, auto) minmax(711px, auto) minmax(392px, auto);
+    grid-template-areas: 
+        "two one one"
+        "five one one"
+        "six one one"
+        "three three three"
+        "four four four";
+    grid-template-columns: minmax(auto, 241px) minmax(auto, 794px)  minmax(auto, 243px);
+}
+
+.box1 {
+    grid-area: one;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/640px-Flag_of_Kyrgyzstan.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: grey;
+    flex-grow: 1;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.box2 {
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 > img {
+    max-width: 241px;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box5 ul {
+    list-style: none;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    flex-basis: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+    flex-direction: column;
+    background-color: #48b341;
+    text-transform: uppercase;
+}
+
+.box5 ul li {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: 250px auto;
+        grid-template-areas: 
+            "one"
+            "two"
+            "five"
+            "six"
+            "three"
+            "four";
+    }
+}
