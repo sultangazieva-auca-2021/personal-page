@@ -36,9 +36,9 @@ body {
 
 .box1 {
     grid-area: one;
-    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/640px-Flag_of_Kyrgyzstan.svg.png');*/
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/41/Kyrgyzstan_stub.svg');
-    background-size: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/640px-Flag_of_Kyrgyzstan.svg.png');
+    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/41/Kyrgyzstan_stub.svg');*/
+    background-size: cover;
 
     background-repeat: no-repeat;
     background-position: center;
