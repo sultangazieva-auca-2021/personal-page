@@ -24,14 +24,15 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: minmax(75px, auto) minmax(75px, auto) minmax(75px, auto) minmax(711px, auto) minmax(392px, auto);
+    grid-template-rows: minmax(75px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(200px, auto) minmax(150px, auto);
     grid-template-areas: 
-        "two one one"
-        "five one one"
-        "six one one"
-        "three three three"
-        "four four four";
-    grid-template-columns: minmax(auto, 241px) minmax(auto, 794px)  minmax(auto, 243px);
+        "two two"
+        "five one"
+        "six three"
+        "six four"
+        "seven four"
+        "seven .";
+    grid-template-columns: minmax(auto, 240px) minmax(auto, 1038px);
 }
 
 .box1 {
@@ -58,7 +59,7 @@ body {
 .box2 {
     grid-area: two;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -86,6 +87,10 @@ body {
     grid-area: six;
 }
 
+.box7 {
+    grid-area: seven;
+}
+
 .box5 ul {
     list-style: none;
     display: flex;
@@ -106,8 +111,8 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 1rem;
-    border-bottom: 1px solid whitesmoke;
+    padding: 1.5rem;
+    border-bottom: 2px solid whitesmoke;
     text-align: center;
 }
 
@@ -121,6 +126,7 @@ body {
             "one"
             "six"
             "three"
-            "four";
+            "four"
+            "seven";
     }
 }

@@ -121,6 +121,10 @@ body {
     grid-area: six;
 }
 
+.box7 {
+    display: none;
+}
+
 @media (max-width: 500px) {
     .container {
         grid-template-columns: 100%;
