@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+
+.buttonMenu {
+    display: none;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(75px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(200px, auto) minmax(150px, auto);
+    grid-template-areas: 
+        "two two"
+        "five one"
+        "six three"
+        "six four"
+        "seven four"
+        "seven .";
+    grid-template-columns: minmax(auto, 240px) minmax(auto, 1038px);
+}
+
+.box1 {
+    grid-area: one;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/640px-Flag_of_Kyrgyzstan.svg.png');
+    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/41/Kyrgyzstan_stub.svg');*/
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: grey;
+    flex-grow: 1;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.box2 {
+    grid-area: two;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.box2 > img {
+    max-width: 241px;
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box5 ul {
+    list-style: none;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    flex-basis: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+    flex-direction: column;
+    background-color: #48b341;
+    text-transform: uppercase;
+}
+
+.box5 ul li {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem;
+    border-bottom: 2px solid whitesmoke;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: 75px 225px auto;
+        grid-template-areas: 
+            "two"
+            "one"
+            "six"
+            "three"
+            "four"
+            "seven";
+    }
+
+    .buttonMenu {
+        display: block;
+        
+        position: fixed;
+        top: 10px; 
+        right: 0;
+        margin-right: 10px;
+    }
+
+    .buttonMenu i {
+        font-size: 30px;
+        padding: 3px;
+    }
+
+    .menu.mobileMenu {
+        display: block;
+        
+        position: fixed;
+        top: 50px; 
+        right: 0;
+    }
+
+    .box5 ul {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+
+    
+}

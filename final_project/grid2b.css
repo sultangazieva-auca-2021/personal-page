@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(250px, auto) minmax(75px, auto) minmax(711px, auto) minmax(392px, auto);
+    grid-template-areas: 
+        "one one one"
+        "two five six"
+        "three three three"
+        "four four four";
+    grid-template-columns: minmax(auto, 241px) minmax(auto, 794px)  minmax(auto, 243px);
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box1 h1 {
+    display: none;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.box5 ul {
+    list-style: none;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    padding-top: 1px;
+    align-items: center;
+    font-size: 12px;
+    height: 100%;
+}
+
+.box5 ul li {
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: bold;
+}
+
+.box5 ul li:nth-child(1) {
+    background-color: #48b341;
+    color: #f7fcf7;
+    padding: 8px 28px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 45px;
+}
+
+.box5 ul :nth-child(2) {
+    margin-left: 69px;
+}
+
+.box5 ul :nth-child(3) {
+    margin-left: 21px;
+}
+
+.box5 ul :nth-child(4) {
+    margin-left: 21px;
+}
+
+.box5 ul :nth-child(5) {
+    margin-left: 20px;
+}
+
+.box5 ul .icon {
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+/*
+.box5 ul :nth-child(1)::after {
+    content: "\2630";
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 12px;
+}
+*/
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: 250px auto;
+        grid-template-areas: 
+            "one"
+            "two"
+            "five"
+            "six"
+            "three"
+            "four";
+    }
+}
