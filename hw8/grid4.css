@@ -64,6 +64,10 @@ body {
     display: none;
 }
 
+h2 {
+    display: none;
+}
+
 .box2 {
     grid-area: two;
     display: flex;
