@@ -34,11 +34,18 @@ body {
 
 .box1 {
     grid-area: one;
-    background-image: "ads_photo.png";
 }
 
 .box1 h1 {
     display: none;
+}
+
+.box1 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .box2 {
@@ -64,35 +71,35 @@ body {
 }
 
 .news1 .image {
-    background-image: "image1.png";
+    background-image: url("image1.png");
 }
 
 .news2 .image {
-    background-image: "image2.png";
+    background-image: url("image2.png");
 }
 
 .news3 .image {
-    background-image: "image3.png";
+    background-image: url("image3.png");
 }
 
 .news4 .image {
-    background-image: "image4.png";
+    background-image: url("image4.png");
 }
 
 .news5 .image {
-    background-image: "image5.png";
+    background-image: url("image5.png");
 }
 
 .news6 .image {
-    background-image: "image6.png";
+    background-image: url("image6.png");
 }
 
 .news7 .image {
-    background-image: "image7.png";
+    background-image: url("image7.png");
 }
 
 .news8 .image {
-    background-image: "image8.png";
+    background-image: url("image8.png");
 }
 
 .news_container {
@@ -145,7 +152,7 @@ h2 {
 
 .box5 ul li {
     text-decoration: none;
-    color: #1b1b1b;
+    color: black;
     font-weight: bold;
 }
 

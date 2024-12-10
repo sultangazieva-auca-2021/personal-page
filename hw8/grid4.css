@@ -60,6 +60,10 @@ body {
     text-align: center; 
 }
 
+.box1 img {
+    display: none;
+}
+
 .box2 {
     grid-area: two;
     display: flex;
