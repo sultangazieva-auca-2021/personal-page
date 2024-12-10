@@ -44,6 +44,13 @@ body {
     grid-area: two;
 }
 
+.box2 > img {
+    display: block;
+    max-width: 168px;
+    margin-left: 39px;
+    margin-top: 30px;
+}
+
 .box3 {
     grid-area: three;
 }
@@ -125,7 +132,22 @@ body {
     display: none;
 }
 
+.buttonMenu {
+    display: none;
+}
+
 @media (max-width: 500px) {
+    .box2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box2 > img {
+        margin: 0px;
+        padding: 1rem;
+    }
+
     .container {
         grid-template-columns: 100%;
         grid-template-rows: 250px auto;
