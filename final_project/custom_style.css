@@ -16,6 +16,7 @@ body {
     color: blue;
     background-image: none;
     opacity: 1;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .buttonMenu {
@@ -52,7 +53,7 @@ body {
     flex-grow: 1;
     color: white;
     text-transform: uppercase;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -73,6 +74,7 @@ h2 {
     display: flex;
     justify-content: left;
     align-items: center;
+    background-color: #f3f3f3;
 }
 
 .box2 > img {
@@ -81,12 +83,107 @@ h2 {
     padding: 1.5rem;
 }
 
+.box2 .right_search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-right: 25px;
+    gap: 10px
+}
+
+.right_search h3 {
+    font-size: 30px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
 .box3 {
     grid-area: three;
+    background-image: url(ads_photo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
 }
 
 .box4 {
     grid-area: four;
+}
+
+.box4 .col1_logo {
+    display: none;
+}
+
+.box4 .footer_menu {
+    display: none;
+}
+
+.kg {
+    display: none;
+}
+
+.social_media_list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: 25px solid whitesmoke;
+    background-color: #55af4f
+}
+
+.social_media_list li {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.extra_menu img {
+    width: 100%;    
+}
+
+.extra_menu {
+    margin: 0px, 25px;
+}
+
+.contact_headers {
+    display: flex;
+    gap: 45px;
+    margin-top: -7px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    word-spacing: -1px;
+    justify-content: center;
+    height: 42px;
+    align-items: end;
+    background-color: #f3f3f3;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
+.contacts {
+    color: #333;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.data_collector {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.advert {
+    margin-top: 20px;
 }
 
 .box5 {
@@ -126,6 +223,7 @@ h2 {
     padding: 1.5rem;
     border-bottom: 2px solid whitesmoke;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 500px) {
@@ -172,6 +270,4 @@ h2 {
         height: auto;
         margin: 10px;
     }
-
-    
 }

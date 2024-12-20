@@ -20,6 +20,14 @@ body {
     opacity: 1;
 }
 
+.box2 .right_search {
+    display: none;
+}
+
+.box4 .extra_menu {
+    display: none;
+}
+
 .container > * {
     border: 2px dashed blue;
 }
