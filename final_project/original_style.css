@@ -128,12 +128,19 @@ body {
 
 h2 {
     font-family: Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16.4px;
     margin-top: 10.5px;
-    color: green;
+    color: #333;
     font-weight: 600;
     margin-left: 2px;
-    word-spacing: -3.5px;
+    word-spacing: -1.5px;
+    line-height: 20px;
+}
+
+.news1 > h2 {
+    font-size: 17px;
+    font-weight: 700;
+    word-spacing: -3px;
 }
 
 .footer_content {
@@ -141,10 +148,11 @@ h2 {
     padding: 32px 0px 0px 28px;
     grid-template-areas: 
         "logo socials kg"
-        ".  footer_menu ."
+        "contacts footer_menu ."
         "address . ."
         "sugsts data .";
     grid-template-columns: 611px 500px auto;
+    /* background-color: #f3f3f3; */
 }
 
 .age_limit {
@@ -243,26 +251,32 @@ h2 {
 .address .first {
     font-size: 0.9rem;
     font-weight: unset;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
 .address .second {
     font-size: 11px;
     font-weight: 900;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .address .third {
     font-size: 11px;
     font-weight: 900;
-    margin-top: 15px;
+    margin-top: 9px;
 }
 
 .data_collector {
     grid-area: data;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: end;
+    gap: 8px;
+    height: 69px;
+}
+
+.data_entry {
+    margin-bottom: 3px;
 }
 
 .suggestions {
@@ -272,14 +286,60 @@ h2 {
 .suggestions > * {
     padding: 0px;
     margin: 0px;
+    color: #333;
 }
 
 .suggestions .contact_us {
-    font-size: 11px;
-    margin-top: 34px;
-    word-spacing: 0px;
-    font-weight: 300;
+    font-size: 10.5px;
+    margin-top: 28px;
+    word-spacing: -1px;
+    font-weight: 900;
     font-style: italic;
+}
+
+.suggestions .phone {
+    font-size: 12px;
+    margin-top: -4px;
+    word-spacing: 1px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.contact_info {
+    grid-area: contacts;
+}
+
+.contact_headers {
+    display: flex;
+    gap: 19px;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    word-spacing: -1px;
+}
+
+.contact_headers .second {
+    font-size: 13px;
+    margin-top: 1px;
+    font-weight: 900;
+    word-spacing: 1px;
+}
+
+.contacts .title {
+    margin: 12px 0px;
+    font-size: 15px;
+    word-spacing: -3px;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.contacts .phones {
+    color: #000;
+    margin-left: 10px;
+    font-size: 15px;
 }
 
 .box4 {
