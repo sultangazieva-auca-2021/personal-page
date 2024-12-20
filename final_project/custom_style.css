@@ -60,6 +60,14 @@ body {
     text-align: center; 
 }
 
+.box1 img {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
 .box2 {
     grid-area: two;
     display: flex;
