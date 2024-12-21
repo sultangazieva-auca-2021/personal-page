@@ -182,6 +182,10 @@ h2 {
     padding-top: 10px;
 }
 
+.web_link {
+    height: 15px;
+}
+
 .advert {
     margin-top: 20px;
 }
@@ -196,8 +200,48 @@ h2 {
     grid-area: six;
 }
 
+.box6 ul {
+    margin-top: 18px;
+    list-style: none;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    flex-basis: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+    flex-direction: column;
+    background-color: grey;
+
+}
+
+.box6 ul li {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem;
+    border-bottom: 2px solid whitesmoke;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search_group {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
 .box7 {
     grid-area: seven;
+}
+
+.box7 img {
+    width: 100%;
+    height: 100%;
 }
 
 .box5 ul {

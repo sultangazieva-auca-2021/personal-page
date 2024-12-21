@@ -54,6 +54,10 @@ body {
     display: none;
 }
 
+.box6 .regions {
+    display: none;
+}
+
 .box1 img {
     width: 100%;
     height: 100%;
@@ -419,7 +423,7 @@ h2 {
 }
 */
 
-.box6 {
+.box6 .search_group {
     grid-area: six;
     display: flex;
     gap: 1px;
@@ -427,6 +431,7 @@ h2 {
     align-items: center;
     padding-right: 33px;
     padding-top: 5px;
+    height: 100%;
 }
 
 .box6 h2 {
