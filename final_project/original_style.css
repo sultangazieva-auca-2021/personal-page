@@ -242,7 +242,7 @@ h2 {
     font-size: 9.8px;
     margin-top: 33px;
     word-spacing: -2px;
-    font-weight: 450;
+    font-weight: bold;
     color: black;
     font-family: Arial, sans-serif;
 }
@@ -302,10 +302,10 @@ h2 {
 }
 
 .suggestions .contact_us {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 29px;
     word-spacing: -2px;
-    font-weight: 900;
+    font-weight: 100;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -343,22 +343,19 @@ h2 {
 .contacts {
     margin: 0px;
     padding: 0px;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 11px;
     color: #333;
 }
 
-.contacts .title {
-    font-weight: 0;
-}
-
 .contacts .email {
-    margin-left: 4px;
+    margin-left: 3px;
     font-size: 14px;
+    font-weight: 900;
 }
 
 .contacts .phone1 {
-    margin-left: 7px;
+    margin-left: 2px;
     font-size: 14px;
     font-weight: 900;
 }
@@ -374,32 +371,36 @@ h2 {
     padding: 0px;
     font-size: 15px;
     color: #333;
-    margin-top: 13px;
+    margin-top: 12px;
 }
 
 .contacts2 .advert {
-    font-size: 15px;
+    font-size: 16px;
     word-spacing: -3px;
 }
 
 .contacts2 .phone1 {
     font-size: 14px;
-    margin-left: 2px;
+    margin-left: 5px;
+    font-weight: 900;
 }
 
 .contacts2 .phone2 {
     font-size: 14px;
     margin-left: 5px;
+    font-weight: 900;
 }
 
 .contacts2 .phone3 {
     font-size: 14px;
     margin-left: 3px;
+    font-weight: 900;
 }
 
 .contacts2 .phone4 {
     font-size: 14px;
     margin-left: 5px;
+    font-weight: 900;
 }
 
 .box4 {

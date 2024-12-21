@@ -186,8 +186,11 @@ h2 {
     height: 15px;
 }
 
-.advert {
-    margin-top: 20px;
+.contacts2 {
+    color: #333;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    padding: 20px;
 }
 
 .box5 {
