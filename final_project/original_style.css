@@ -28,9 +28,9 @@ body {
     display: none;
 }
 
-.container > * {
+/* .container > * {
     border: 2px dashed blue;
-}
+} */
 
 .container {
     display: grid;
